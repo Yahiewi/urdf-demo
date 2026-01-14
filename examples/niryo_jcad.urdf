@@ -1,0 +1,47 @@
+<robot name="myrobot">
+
+        <material name="blue">
+        <color rgba="0.192157 0.643137 0.866667 1"/>
+    </material>
+
+    <material name="black">
+        <color rgba="0.12 0.12 0.12 1"/>
+    </material>
+
+    <material name="silver">
+        <color rgba="0.73 0.75 0.75 1"/>
+    </material>
+    
+      <!-- WORLD -->
+      <link name="world"/>
+    
+      <link name="base_link">
+        <visual>
+          <geometry>
+            <mesh filename="package://meshes/base_link.stl" />
+          </geometry>
+        </visual>
+        <collision>
+          <geometry>
+            <mesh filename="package://meshes/base_link.stl" />
+          </geometry>
+        </collision>
+      </link>
+      <joint name="world_to_base_link_joint" type="fixed">
+        <parent link="world"/>
+        <child link="base_link"/>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+      </joint>
+      <link name="shoulder_juncture">
+        <visual>
+          <geometry>
+            <mesh filename="package://meshes/shoulder_juncture.stl" />
+          </geometry>
+        </visual>
+        <collision>
+          <geometry>
+            <mesh filename="package://meshes/shoulder_juncture.stl" />
+          </geometry>
+        </collision>
+      </link>
+
