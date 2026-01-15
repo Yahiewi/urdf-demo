@@ -6,5 +6,6 @@ dependencies:
   - xeus-python 
   - jupyterlab_widgets >=3.0
   - ipywidgets >=8.0
-  - pip:
-    - ./jupyterlab_urdf-0.6.0-py3-none-any.whl
+  - jupyterlab-urdf
+  - jupytercad-lite
+  - jupytercad-urdf
