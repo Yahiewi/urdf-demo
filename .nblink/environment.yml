@@ -1,0 +1,9 @@
+name: urdf-lite-env
+channels:
+  - conda-forge
+  - emscripten-forge
+dependencies:
+  - xeus-python 
+  - jupyterlab_widgets >=3.0
+  - ipywidgets >=8.0
+  - jupyterlab-urdf
