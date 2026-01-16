@@ -1,7 +1,7 @@
 name: urdf-lite-env
 channels:
-  - conda-forge
   - emscripten-forge
+  - conda-forge
 dependencies:
   - xeus-python 
   - jupyterlab-urdf
