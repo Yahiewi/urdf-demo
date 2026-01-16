@@ -5,3 +5,5 @@ channels:
 dependencies:
   - xeus-python 
   - jupyterlab-urdf
+  - jupytercad-urdf
+  - jupytercad-lite
